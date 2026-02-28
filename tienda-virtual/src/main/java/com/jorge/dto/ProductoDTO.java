@@ -10,12 +10,11 @@ public class ProductoDTO {
     private String marca;
     private String imagen;
 
-    public ProductoDTO() {
-    }
+    public ProductoDTO() {}
 
     public ProductoDTO(int idProducto, int idCategoria, String nombre,
-            String descripcion, double precio,
-            String marca, String imagen) {
+                       String descripcion, double precio,
+                       String marca, String imagen) {
         this.idProducto = idProducto;
         this.idCategoria = idCategoria;
         this.nombre = nombre;
@@ -80,5 +79,6 @@ public class ProductoDTO {
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
+
 
 }

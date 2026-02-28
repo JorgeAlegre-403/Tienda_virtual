@@ -1,27 +1,15 @@
 package com.jorge.dto;
 
-import java.time.LocalDate;
+import java.math.BigDecimal;
+import java.util.Date;
 
 public class PedidoDTO {
 
     private int idPedido;
-    private LocalDate fecha;
+    private Date fecha;
     private String estado;
-    private int idUsuario;
-    private double importe;
-    private double iva;
-
-    public PedidoDTO() {}
-
-    public PedidoDTO(int idPedido, LocalDate fecha, String estado,
-                     int idUsuario, double importe, double iva) {
-        this.idPedido = idPedido;
-        this.fecha = fecha;
-        this.estado = estado;
-        this.idUsuario = idUsuario;
-        this.importe = importe;
-        this.iva = iva;
-    }
+    private BigDecimal importe;
+    private BigDecimal iva;
 
     public int getIdPedido() {
         return idPedido;
@@ -31,11 +19,11 @@ public class PedidoDTO {
         this.idPedido = idPedido;
     }
 
-    public LocalDate getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
@@ -47,30 +35,19 @@ public class PedidoDTO {
         this.estado = estado;
     }
 
-    public int getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public double getImporte() {
+    public BigDecimal getImporte() {
         return importe;
     }
 
-    public void setImporte(double importe) {
+    public void setImporte(BigDecimal importe) {
         this.importe = importe;
     }
 
-    public double getIva() {
+    public BigDecimal getIva() {
         return iva;
     }
 
-    public void setIva(double iva) {
+    public void setIva(BigDecimal iva) {
         this.iva = iva;
     }
-
-
-
 }
