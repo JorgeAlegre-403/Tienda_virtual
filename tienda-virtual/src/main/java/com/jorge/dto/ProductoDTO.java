@@ -80,5 +80,10 @@ public class ProductoDTO {
         this.imagen = imagen;
     }
 
+    public Integer getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
+
 
 }

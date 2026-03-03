@@ -20,8 +20,4 @@ public class DAOFactory {
     public static PedidoDAO getPedidoDAO() {
         return new PedidoDAOImpl();
     }
-
-    public static LineaPedidoDAO getLineaPedidoDAO() {
-        return new LineaPedidoDAOImpl();
-    }
 }
